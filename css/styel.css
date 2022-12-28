@@ -1,0 +1,248 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family:Montserrat;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    overflow: hidden !important;
+}
+
+
+.navbar-container .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0px;
+    height: 20vh;
+    align-items: center;
+    overflow-x: auto;
+    width: 100vw;
+}
+.navbar-container .navbar .logoimage img {
+    width: 100px;
+}
+
+.navbar-container .navbar .list {
+    list-style-type: none;
+    display: flex;
+    gap: 80px;
+    font-size: 13px;
+    color: #868686;
+    align-items: center;
+    position: relative;
+}
+.navbar-container .navbar .list .list-item:nth-child(2) {
+    color: #000000;
+    font-size: 14px;
+}
+.navbar-container .navbar .list .list-item {
+    cursor: pointer;
+}
+.line {
+    left: -350px;
+    height: 1.7px;
+    position: absolute;
+    border-radius: 40px;
+    width: 68%;
+    background-color: #674b4b;
+}
+
+/*---- left image section  ---*/
+
+.left-image-container {
+    width: 35vw;
+}
+main {
+    display: flex;
+}
+.left-image-container .left-image img {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    bottom: 0;
+}
+.left-image-container .left-image {
+    left: 0;
+    top: 0;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    width: 35vw;
+}
+
+/* right section images and content  */
+
+
+.heading {
+    position: absolute;
+    left: 10%;
+    top: -40px;
+}
+.right-container {
+    position: relative;
+    display: flex;
+    width: 60vw;
+}
+.heading h1 {
+    font-family: "Merriweather";
+    font-weight: 900;
+    font-size: 7rem;
+    color: #232323;
+}
+.heading > h1 {
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+.heading > h1::after {
+    content: "";
+    width: 50px;
+    height: 12px;
+    display: inline-block;
+    border: 2px solid #999696;
+    margin-bottom: 25px;
+}
+.heading div {
+    margin-left: 110px;
+    margin-top: -30px;
+    color: #414141;
+    display: flex;
+    align-items: center;
+
+} 
+.heading div p {
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 30px;
+    color: #6b6b6b;
+    padding-left: 40px;
+    padding-top: 30px;
+    
+}
+.heading div h1::after {
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-color: #4d4c4c;
+    display: inline-block;
+    border-radius: 50px;
+} 
+
+.right-container .btn-wrapper {
+    position: absolute;
+    right: 0;
+    bottom: -70px;
+    right: -190px;
+}
+.right-container .btn-wrapper button {
+    background-color: #404040;
+    color: #FFFFFF;
+    padding: 17px 78px;
+    border: none;
+    font-size: 18px;
+    font-weight: normal;
+    cursor: pointer;
+}
+.social-icons {
+    position: absolute;
+    right: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    top: -16px;
+}
+.social-icons img {
+    width: 20px;
+}
+.social-icons img:nth-child(2) {
+    width: 16px;
+}
+.social-icons img:nth-child(3) {
+    width: 12px;
+}
+.social-icons img:nth-child(4) {
+    width: 16px;
+}
+
+
+
+/* bottom section  */
+.bottom ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.bottom {
+    top: 320px;
+    position: absolute;
+    left: 100px;
+}
+.bottom ul li {
+    font-size: 1rem;
+    list-style-type: none;
+    color: #797878;
+    display: flex;
+    align-items: center;
+}
+.bottom ul li:not(:last-child) {
+    padding-bottom: 28px;
+}
+.bottom ul li span {
+    background-color: #767575;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    display: inline-block;
+    vertical-align: center;
+    margin-right: 20px;
+}
+.active-item .dot {
+    background-color: #4c4c4c;
+}
+.active-item p {
+    color: #4f4e4e;
+}
+.bottom .line-dot {
+    height: 120%;
+    width: 1.55px;
+    background-color: #929191;
+    position: absolute;
+    left: 7px;
+    top: 20px;
+}
+
+.bottom-quote {
+    position: absolute;
+    left: 270px;
+    top: 0px;
+}
+.bottom-quote p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.img {
+    width: 400px;
+}
+.img > img {
+    width: 100%;
+}
+.quote-icon .fa-quote-right {
+    color: #4e4d4d;
+    font-size: 40px;
+}
+.arrow {
+    position: absolute;
+    top: 120px;
+    right: -140px;
+}
+.arrow > img {
+    width: 30px;
+}
